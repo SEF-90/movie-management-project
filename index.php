@@ -1,5 +1,19 @@
 <?php
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $db = "stores";
+  
+  #Initial setup, connects to the xampp server.
+  $conn = mysqli_connect($servername, $username, $password, $db);
+  
+  if (!$conn) {
+    echo "connection not successful";
+  } else {
+    echo "connection successful";
+  }
 ?>
+
 
 <html lang="en">
 <head>
